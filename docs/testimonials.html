@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C's Medical Laboratory</title>
+    <link rel="stylesheet" href="testimonials.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo"><a href="index.html">C's</a></h1>
+            </div>
+
+            <i class="fa fa-bars" id="menu-toggle"></i> <!-- Open Menu Button -->
+
+            <div class="menu" id="menu">
+                <i class="fa fa-times" id="close-menu"></i> <!-- Close Menu Button -->
+                <ul>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                </ul>
+            </div>  
+    </header>
+
+    <!-- Video Background Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="Science Laboratory 4K Stock Video.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+         </div>
+            <div class="content">
+                <h1>Customer Feedback</h1>
+                <div>
+                    <button type="button"><a href="#tests" style="text-decoration: none;">Explore</a></button>
+                </div>
+            </div>
+    </section>
+    <div class="title-test" id="tests">
+        <h1>Testimonials</h1>
+    </div>
+    <section class="testimonials" >
+        <div class="testimonial">
+            <img src="Luis.pfp.jpg" alt="Client 1">
+            <div class="testimonial-content">
+                <div class="stars">★★★★★</div>
+                <p>"C's medical laboratory is amazing! Their lab results are always accurate and delivered on time. Highly recommend their services!"</p>
+                <h3>- Luis Gonzalez</h3>
+            </div>
+        </div>
+    
+        <div class="testimonial">
+            <img src="SECH.pfp.jpg" alt="Client 2">
+            <div class="testimonial-content">
+                <div class="stars">★★★★★</div>
+                <p>"I had a great experience at C's medical laboratory. The staff is friendly, professional, and made me feel comfortable throughout the process."</p>
+                <h3>- Alvaro Huitz</h3>
+            </div>
+        </div>
+    
+        <div class="testimonial">
+            <img src="Kieron.pfp.jpg" alt="Client 3">
+            <div class="testimonial-content">
+                <div class="stars">★★★★★</div>
+                <p>"Fantastic experience from start to finish. Will definitely use their services again!"</p>
+                <h3>- Kieron Patt</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 C's Medical Laboratory. All Rights Reserved.</p>
+    </footer>
+
+  <!-- JavaScript -->
+  <script>
+    var menu = document.getElementById("menu");
+    var menuToggle = document.getElementById("menu-toggle");
+    var closeMenu = document.getElementById("close-menu");
+
+    menuToggle.addEventListener("click", function() {
+        menu.style.right = "0";
+    });
+
+    closeMenu.addEventListener("click", function() {
+        menu.style.right = "-250px";
+    });
+</script>
+</body>
+</html>
