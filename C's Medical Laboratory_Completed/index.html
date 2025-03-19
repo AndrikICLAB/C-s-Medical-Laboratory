@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C's Medical Laboratory</title>
+    <link rel="stylesheet" href="style.css">  <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo"><a href="index.html">C's</a></h1>
+            </div>
+
+            <i class="fa fa-bars" id="menu-toggle"></i> <!-- Open Menu Button -->
+
+            <div class="menu" id="menu">
+                <i class="fa fa-times" id="close-menu"></i> <!-- Close Menu Button -->
+                <ul>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                </ul>
+            </div>  
+        </div>
+
+        <div class="content">
+            <h1>C's Medical Laboratory</h1>
+            <p class="par">Your trusted partner in accurate and reliable medical diagnostics. <br>We provide fast, efficient, and professional laboratory services to help you take charge of your health.</p>
+            <button class="cn">
+                <a href="contact.html">Book an Appointment</a>
+            </button>
+        </div>  
+    </div>
+
+    <!-- Footer -->
+<!--     <footer>
+        <p>&copy; 2025 C's Medical Laboratory. All Rights Reserved.</p>
+    </footer> -->
+
+    <!-- JavaScript -->
+    <script>
+        var menu = document.getElementById("menu");
+        var menuToggle = document.getElementById("menu-toggle");
+        var closeMenu = document.getElementById("close-menu");
+
+        menuToggle.addEventListener("click", function() {
+            menu.style.right = "0";
+        });
+
+        closeMenu.addEventListener("click", function() {
+            menu.style.right = "-250px";
+        });
+    </script>
+
+</body>
+</html>
